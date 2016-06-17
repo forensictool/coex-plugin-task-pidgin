@@ -33,7 +33,7 @@ dist/*
 test.sh
 results/
 
-app_ui.pro.user
+*.pro.user
 qrc_images.cpp
 moc_window.cpp
 .DS_Store

@@ -1,5 +1,5 @@
-# coex-plugin-task-searchgitrepo
-Plugin for search git repository in file system
+# coex-plugin-task-pidgin
+Collect a list of user messenger contacts.
 
 Requirements: Qt5
 
@@ -13,37 +13,31 @@ Requirements: Qt5
 	
 ### run single app:
 
-	$ ./bin/coex-searchgitrepo --help
+	$ ./bin/coex-pidgin --help
 
-	Task is search git-repository
+	Task is search logs of Pidgin
 
-	  Usage: ./bin/coex-searchgitrepo [OPTIONS] 
+	  Usage: ./coex-pidgin [OPTIONS] 
 
 	  OPTIONS:
 
-		--input-folder <fullpath>       - required parameter
-		--output-folder <fullpath>      - required parameter
-		--help                          - this help
+	    --input-folder <fullpath>       - required parameter
+	    --output-folder <fullpath>      - required parameter
+	    --help                          - this help
 
 	  Version: 0.1.0
-	  Author: Evgenii Sopov <mrseakg@gmail.com>
-
-	$ ./bin/coex-searchgitrepo --input-folder ../ --output-folder ../output
+	  Author: Igor Polyakov <fox.user.3@gmail.com>
 
 
-	==========TaskSearchGitRepository::execute==========
+	$ ./bin/coex-pidgin --input-folder ../ --output-folder ../output
+
+
+	==========TaskPidgin::execute==========
 
 	 * Debug mode: On
 	 * InputFolder:  "../"
 	 * OutputFolder:  "../output" 
 
-	/home/sea-kg/develop/tusur-coex/coex-plugin-task-searchgitrepo => git@github.com:tusur-coex/coex-plugin-task-searchgitrepo.git
-	/home/sea-kg/develop/tusur-coex/coex => git@github.com:tusur-coex/coex.git
-	/home/sea-kg/develop/tusur-coex/coex-core => git@github.com:tusur-coex/coex-core.git
-	/home/sea-kg/develop/tusur-coex/create-packages => git@github.com:tusur-coex/create-packages.git
-	/home/sea-kg/develop/tusur-coex/create-packages/build/coex-plugin-task-searchgitrepo => https://github.com/tusur-coex/coex-plugin-task-searchgitrepo.git
-	/home/sea-kg/develop/tusur-coex/create-packages/build/coex-plugin-detect-ubuntu => https://github.com/tusur-coex/coex-plugin-detect-ubuntu.git
-	/home/sea-kg/develop/tusur-coex/coex-testdata => git@github.com:tusur-coex/coex-testdata.git
-	/home/sea-kg/develop/tusur-coex/coex-plugin-detect-ubuntu => git@github.com:tusur-coex/coex-plugin-detect-ubuntu.git
+	==========TaskPidgin::finish==========
 
-	==========TaskSearchGitRepository::finish==========
+

@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<schema name="gitrepo">
-	<!-- add 3 fields -->
-	<field name="gitrepo_url" type="text" indexed="true" stored="true"/>
-	<field name="gitrepo_path" type="text" indexed="true" stored="true"/>
-	<field name="gitrepo_other" type="text" indexed="true" stored="true"/>
+<schema name="pidgin">
+	<!-- add 15 fields -->
+    <field name="account_id" type="text" indexed="true" stored="true"/>
+    <field name="account_mail" type="text" indexed="true" stored="true"/>
+    <field name="account_password" type="text" indexed="true" stored="true"/>
+    <field name="account_protocol" type="text" indexed="true" stored="true"/>
+    <field name="contact_account" type="text" indexed="true" stored="true"/>
+    <field name="contact_id" type="text" indexed="true" stored="true"/>
+    <field name="contact_name" type="text" indexed="true" stored="true"/>
+    <field name="contact_protocol" type="text" indexed="true" stored="true"/>
+    <field name="message_account" type="text" indexed="true" stored="true"/>
+    <field name="message_author" type="text" indexed="true" stored="true"/>
+    <field name="message_chat_id" type="text" indexed="true" stored="true"/>
+    <field name="message_dataTime" type="text" indexed="true" stored="true"/>
+    <field name="message_protocol" type="text" indexed="true" stored="true"/>
+    <field name="message_text" type="text" indexed="true" stored="true"/>
 </schema>

@@ -1,20 +1,34 @@
 <add>
 	<doc>
-		<!-- Comment: id must be generated as bookmark_MD5(fullpath) -->
-		<field name="id">gitrepo_c0ee9eb3b28210b249dfda5cc8026980</field>
-		<field name="application">Git</field>
-		<field name="doc_type">gitrepo</field>
-		<field name="gitrepo_url">git@github.com:tusur-coex/coex.git</field>
-		<field name="gitrepo_path">/home/some/develop/tusur-coex/coex</field>
-		<field name="gitrepo_other">other information</field>
+		<!-- Comment: id must be generated as MD5(email + protocol + name + password) -->
+		<field name="id">pidgin_c0ee9eb3b28210b249dfda5cc8026980</field>
+		<field name="application">pidgin</field>
+		<field name="doc_type">account</field>
+		<field name="account_id">id581456</field>
+		<field name="account_mail">lis@mail.com</field>
+		<field name="account_protocol">jabber</field>
+		<field name="account_password">sooo_passwrd</field>
 	</doc>
 	<doc>
-		<!-- Comment: id must be generated as bookmark_MD5(fullpath) -->
-		<field name="id">gitrepo_c0ee9eb3b28210b249dfda5cc8026981</field>
-		<field name="application">Git</field>
-		<field name="doc_type">gitrepo</field>
-		<field name="gitrepo_url">git@github.com:tusur-coex/coex-core.git</field>
-		<field name="gitrepo_fullpath">/home/some/develop/tusur-coex/coex-core</field>
-		<field name="gitrepo_other">other information</field>
+		<!-- Comment: id must be generated as MD5(protocol + account + name + alias) -->
+		<field name="id">pidgin_c0ee9eb3b28210b249dfda5cc8026981</field>
+		<field name="application">pidgin</field>
+		<field name="doc_type">contact</field>
+		<field name="contact_name">pox</field>
+		<field name="contact_account">lis@mail.com</field>
+		<field name="contact_protocol">jabber</field>
+		<field name="contact_id">id581456</field>
+	</doc>
+	<doc>
+		<!-- Comment: id must be generated as MD5(chathID + account + protocol + author + dataTime + message) -->
+		<field name="id">pidgin_c0ee9eb3b28210b249dfda5cc8026981</field>
+		<field name="application">pidgin</field>
+		<field name="doc_type">message</field>
+		<field name="message_chat_id">210b249df</field>
+		<field name="message_account">lis@mail.com</field>
+		<field name="message_protocol">jabber</field>
+		<field name="message_author">xenks</field>
+		<field name="message_dataTime"></field>
+		<field name="message_text">hello jerk</field>
 	</doc>
 </add>
