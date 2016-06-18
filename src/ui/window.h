@@ -20,9 +20,9 @@
 #include "../coex/coex.h"
 #include "tablemodel_gitrepos.h"
 
-class GitSearchRepoWindowThread;
+class PidginWindowThread;
 
-class GitSearchRepoWindow : public QMainWindow
+class PidginWindow : public QMainWindow
 {
 	// private:
 		Q_OBJECT
@@ -32,14 +32,14 @@ class GitSearchRepoWindow : public QMainWindow
         QLineEdit *m_pInputFolder;
         QPushButton *m_pButtonStart;
 
-		GitSearchRepoWindowThread *m_pThread;
+		PidginWindowThread *m_pThread;
         coex::ITask* m_pTask;
         TableModelGitRepos* m_pTableModel_GitRepos;
 
         void initWidgets();
 	public:
 
-		GitSearchRepoWindow();
+		PidginWindow();
 
 	signals:
 
@@ -50,11 +50,11 @@ class GitSearchRepoWindow : public QMainWindow
         void btnStart();
 };
 
-class GitSearchRepoWindowThread : public QThread
+class PidginWindowThread : public QThread
 {
 	private:
 		Q_OBJECT
-		GitSearchRepoWindow *m_pHandSearch;
+		PidginWindow *m_pHandSearch;
 
 	public:
 		void setOriginalSignal(QVector<double> vOriginalSignal);

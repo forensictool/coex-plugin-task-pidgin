@@ -17,8 +17,8 @@
 #include "../coex/config.h"
 #include "../coex/typeos.h"
 
-GitSearchRepoWindow::GitSearchRepoWindow(){
-    m_pTask = (coex::ITask*)(new TaskSearchGitRepository());
+PidginWindow::PidginWindow(){
+    m_pTask = (coex::ITask*)(new TaskPidgin());
 
     setWindowTitle(m_pTask->name());
     // setMinimumSize(1000, 600);
@@ -33,7 +33,7 @@ GitSearchRepoWindow::GitSearchRepoWindow(){
 
 // ---------------------------------------------------------------------
 
-void GitSearchRepoWindow::initWidgets(){
+void PidginWindow::initWidgets(){
     // Main Layout
     m_pMainLayout = new QVBoxLayout();
     m_pMainLayout->setContentsMargins(10,10,10,10);
@@ -142,7 +142,7 @@ void GitSearchRepoWindow::initWidgets(){
 
 // ---------------------------------------------------------------------
 
-void GitSearchRepoWindow::btnChooseInputFolder(){
+void PidginWindow::btnChooseInputFolder(){
     QString path = QDir::home().absolutePath();
     if(m_pInputFolder->text() != "")
         path = m_pInputFolder->text();
@@ -156,7 +156,7 @@ void GitSearchRepoWindow::btnChooseInputFolder(){
 
 // ---------------------------------------------------------------------
 
-void GitSearchRepoWindow::btnStart() {
+void PidginWindow::btnStart() {
 
     QString outputDir = QDir::home().absolutePath() + "/coex.output";
     if(!QDir("Folder").exists()){
@@ -179,7 +179,7 @@ void GitSearchRepoWindow::btnStart() {
 
 // ---------------------------------------------------------------------
 
-void GitSearchRepoWindowThread::run(){
+void PidginWindowThread::run(){
 
 }
 

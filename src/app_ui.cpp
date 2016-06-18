@@ -10,14 +10,14 @@
 int main(int argc, char *argv[])
 {
 	QApplication app(argc, argv);
-	GitSearchRepoWindow w;
+	PidginWindow mainWindow;
 	
 	// center of desctop
 	QDesktopWidget wid;
 	int screenWidth = wid.screen()->width();
 	int screenHeight = wid.screen()->height();
-	w.setGeometry((screenWidth/2)-(w.width()/2),(screenHeight/2)-(w.height()/2),w.width(),w.height());
+	mainWindow.setGeometry((screenWidth/2)-(mainWindow.width()/2),(screenHeight/2)-(mainWindow.height()/2),mainWindow.width(),mainWindow.height());
 	
-	w.show();
+	mainWindow.show();
 	return app.exec();
 };
